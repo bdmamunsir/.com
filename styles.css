@@ -1,0 +1,141 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+::-webkit-scrollbar{
+
+  width: 8px;
+  
+}
+
+::-webkit-scrollbar-button{
+
+  display: none;
+}
+::-webkit-scrollbar-thumb{
+
+  background-color: grey;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: #ede7e7;
+}
+
+ body {
+    scrollbar-width: thin;
+    scroll-color: red;}
+
+    nav{
+      position: fixed;
+      width: 100%;
+      height: 53px;
+
+    }
+    ul {
+      list-style: none;
+      margin:0px;
+      padding: 0;
+      background: #cf6969; 
+    }
+    ul li {
+      position: relative;
+      display: inline-block;
+    }
+    ul li a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+
+
+    }
+    ul li a:hover {
+      background: greenyellow;
+    }
+
+    ul li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: brown;
+      min-width: 257px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      transition: all 0.6s ease;
+     
+    }
+    ul li ul li {
+      display: block;
+    }
+    ul li ul li a {
+      padding: 8px;
+    }
+    ul li:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+
+    ul li ul li ul {
+      top: 0;
+      left: 100%;
+      background: #cf6969;
+     min-width: 227px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-20px);
+      transition: all 0.6s ease;
+    }
+    ul li ul li:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+
+
+body{ background-color: #FFEBCD;}
+
+     h2{
+      
+    
+    margin-top: -50px;
+    margin-left: 1180px;
+        color: brown;
+    }
+
+
+    
+  h3{
+    
+  margin-top: -70px;
+}
+
+time{
+    margin-left: 1120px;
+    margin-top: 260px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 190px;
+    border-radius: 5px;
+    font-family: Arial Black;
+    text-align: center;
+
+    }
+
+
+     a:hover{
+     
+      color: red;
+      cursor: pointer;
+        }
+ 
+ marquee{
+    margin-top: 0px;
+    position: fixed;
+        font-size: 14px;
+        color: white;
+        }
